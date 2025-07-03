@@ -1,3 +1,101 @@
-h1 {
-    color:red;
+/* normalitzem css */
+@import "modern-normalize";
+root {
+  line-height: 1.5;
 }
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+  margin: 0;
+}
+
+ol[role="list"], ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+/* importem fonts */
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/Norse-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* disseny de la pàgina */
+* {
+    font-family: 'Norse';
+    border: 1px solid red;
+
+}
+
+
+body {
+    height: 1200px;
+    /* width: 1200px; */
+    display: flex;
+}
+
+.imatge {
+    flex: initial;
+    width: 800px;
+    background-image: url(img/fons_plantes.jpg);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+}
+.empty1{
+    flex: 0 1 auto;
+    height:250px;
+}
+
+.banner{
+    flex: 0 1 auto;
+    display:flex;
+    justify-content: center ;
+    background-color: rgba(0,0,0,0.6);
+    height: 150px;
+    align-items: center;
+    gap: 25px
+}
+
+.logo{
+    background-image: url(img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 150px;
+    flex: 0 1 auto;
+}
+.logoname{
+    color:white;
+    font-size: 9em;
+    vertical-align: baseline;
+    flex: 0 1 auto;
+    
+}
+
+.empty2{
+    flex: 1;
+}
+
+.formulari {
+    flex: 1;
+}
+
+/* img{ */
+/*     height: auto; */
+/*     width: auto; */
+/* } */
